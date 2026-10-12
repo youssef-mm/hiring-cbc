@@ -360,7 +360,7 @@ function showPage(n){
   document.querySelector(`.form-page[data-page="${n}"]`).classList.add("active");
   progress.style.width = `${n*20}%`;
   backBtn.style.visibility = n===1 ? "hidden":"visible";
-  nextBtn.textContent = n===5 ? "Submit application →":"Continue →";
+  nextBtn.textContent = n===5 ? "Submit application" : "Continue";
 
   const stepCounter = document.querySelector("#stepCounter");
   const stepLabel = document.querySelector("#stepLabel");
@@ -517,7 +517,7 @@ async function submitApplication(){
   const finishButton = () => {
     nextBtn.disabled = false;
     nextBtn.classList.remove("is-loading");
-    nextBtn.textContent = "Submit application →";
+    nextBtn.textContent = "Submit application";
   };
 
   const showSuccess = () => {

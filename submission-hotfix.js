@@ -101,7 +101,7 @@
   function setBusy(busy) {
     nextBtn.disabled = busy;
     nextBtn.classList.toggle("is-loading", busy);
-    nextBtn.textContent = busy ? "Submitting" : "Submit application →";
+    nextBtn.textContent = busy ? "Submitting" : "Submit application";
   }
 
   function showSuccessResult(result, payload, fallbackReference, legacyFallback = false) {

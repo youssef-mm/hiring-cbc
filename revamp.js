@@ -161,7 +161,7 @@
     if (qs('.role-apply', card)) return;
     const button = document.createElement('button');
     button.type = 'button'; button.className = 'role-apply';
-    button.innerHTML = '<span>Apply to this team</span><span aria-hidden="true">→</span>';
+    button.innerHTML = '<span>Apply to this team</span>';
     button.setAttribute('aria-label', `Apply to ${title}`);
     button.addEventListener('click', () => {
       if (teamFirst) { teamFirst.value = title; teamFirst.dispatchEvent(new Event('change', { bubbles:true })); }
